@@ -1,0 +1,713 @@
+html{ 
+    background-color: rgb(32, 193, 233);
+}
+.hero{
+    display: flex;
+    justify-content: center;
+}
+.hero > div{
+    width: 50%;
+    height: 650px;
+    position: relative;
+}
+.hero > img{
+    position: absolute;
+    top: 49%;
+    left: 20%;
+}
+.hero1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changeImage 20s infinite;
+}
+.sub{
+    background-color: #009FD9;
+    color: white;
+    padding: 60px;
+}
+.sub > h2{
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.sub > p{
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+.sub > a >p{
+    color: white; 
+    font-weight: 500; 
+    font-size: 19px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+#second{
+    padding: 30px;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+#learn{
+    margin-top: 60px;
+    cursor: pointer;
+}
+#learn:hover{
+    color: #009FD9;
+}
+.sub > a >p:hover{
+    color: black;
+}
+@keyframes changeImage {
+    0%, 100% { background-image: url(./images/aspen1.webp); }
+    33.33% { background-image: url(./images/aspen12.webp); }
+    66.66% { background-image: url(./images/aspen2.webp); }
+}
+.hero2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changeImage2 20s infinite;
+}
+@keyframes changeImage2 {
+    0%, 100% { background-image: url(./images/aspen4.webp); }
+    33.33% { background-image: url(./images/aspen3.webp); }
+    66.66% { background-image: url(./images/aspen11.webp); }
+}
+.Focus{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+#talent-text{
+    padding: 50px;
+    color: white;
+    background-color: #2F3E55;
+    padding-bottom: 30px;
+}
+#talent-text > h2{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#talent-text > p{
+    font-size: large;
+}
+#t-text{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#t-text > img{
+    margin-left: 30px;
+    width: 30px;
+}
+#t-text:hover{
+    color: #73ccec;
+}
+.F-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    padding-bottom: 100px;
+}
+.F-container > div >ul{
+    font-size: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+}
+.F-container > div > ul >li{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+}
+.F-container > div > ul > li:hover{
+    color: #73ccec;
+}
+.F-container > div > ul > hr{
+    margin: 0;
+    padding: 0;
+    color: rgb(202, 202, 202);
+} 
+.F-container > #first{
+    height: 280px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    word-wrap: break-word;
+    padding-right: 20px;
+}
+.F-container > #first::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+}
+.F-container > #first::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+/* Styles for the scrollbar thumb */
+.F-container > #first::-webkit-scrollbar-thumb {
+    background-color: #a4e4fc; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Set the radius of the scrollbar thumb */
+}
+/* Styles for the scrollbar thumb on hover */
+.F-container > #first::-webkit-scrollbar-thumb:hover {
+    background-color: #a4e4fc; /* Set the color of the scrollbar thumb on hover */
+}
+.talent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.talent img {
+    transition: transform 0.3s ease;
+}
+.talent > div{
+    overflow: hidden;
+}
+/* Scale up the image on hover */
+.talent > div:hover img {
+    transform: scale(1.1); /* You can adjust the scale value to make the image pop more or less */
+}
+.impact-g{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 50px;
+    background-color: #D9E1E2;
+    padding-bottom: 150px;
+}
+.impact-g > div > .line{
+    width: 50%;
+}
+.impact-g > div > .line > hr{
+    color: #73ccec;
+}
+.impact-g > div{
+    width: 370px;
+    padding: 40px;
+    background-color: #0061A0;
+    color: white;
+    padding-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.m-note > h3{
+    font-size: 40px;
+    color: #73ccec;
+    margin-bottom: 60px;
+    font-weight: 450;
+    cursor: pointer;
+}
+.m-note > h3:hover{
+    color: white;
+}
+.s-note{
+    height: 130px;
+}
+.s-note > p{
+    font-size: 19px;
+    font-weight: 450;
+}
+.m-note{
+    padding-top: 15px;
+    height: 360px;
+}
+.read{
+    font-weight: 500; 
+    font-size: 20px;
+    cursor: pointer;
+}
+.read > img{
+    margin-left: 50%;
+}
+.read > img:hover{
+    color: #73ccec;
+}
+.read:hover{
+    color: #73ccec;
+}
+#talent-text2{
+    padding: 50px;
+    color: white;
+    background-color: #2F3E55;
+    padding-bottom: 30px;
+    padding-left: 100px;
+}
+#talent-text2 > div > h2{
+    font-size: 43px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+#talent-text2 > div > h2:hover + .talent2 > div > image{
+    color: #73ccec;
+    
+}
+#talent-text2 > div{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#t-text2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+    cursor: pointer;
+}
+#t-text3{
+    font-size: 25px;
+    font-weight: 450;
+}
+#t-text2:hover{
+    color: #73ccec;
+}
+.talent2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.talent2 img {
+    transition: transform 0.3s ease;
+}
+.talent2 > div{
+    overflow: hidden;
+}
+/* Scale up the image on hover */
+.talent2 > div:hover img {
+    transform: scale(1.1); /* You can adjust the scale value to make the image pop more or less */
+}
+.impact-g2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.impact-g2 > div > .line{
+    width: 50%;
+}
+.impact-g2 > div > .line > hr{
+    color: #73ccec;
+}
+.impact-g2 > div{
+    width: 370px;
+    padding: 40px;
+    background-color: #a4e4fc;
+    color: black;
+    padding-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 90px;
+}
+.m-note2 > h3{
+    font-size: 40px;
+    color: #73ccec;
+    margin-bottom: 60px;
+    font-weight: 450;
+    cursor: pointer;
+}
+.m-note2 > h3:hover{
+    color: white;
+}
+.s-note2{
+    height: 130px;
+}
+.s-note2 > p{
+    font-size: 19px;
+    font-weight: 450;
+}
+.m-note2{
+    padding-top: 15px;
+    height: 360px;
+}
+.read2{
+    margin-bottom: 100px;
+    font-weight: 450; 
+    font-size: 20px;
+    cursor: pointer;
+}
+.read2 > img{
+    margin-left: 30%;
+}
+.read2 > img:hover{
+    color: #a4e4fc;
+}
+.read2:hover{
+    color: #0061A0;
+}
+#big{
+    width: 750px;
+    padding: 0px;
+    height: 100%;
+}
+#big{
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changeImage3 30s infinite;
+}
+#small > h2{
+    margin-bottom: 50px;
+    font-weight: 450;
+    font-size: 30px;
+}
+#small > .smaller {
+    color: #0061A0;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.smallest{
+    font-size: 18px;
+    margin-bottom: 60px;
+    padding-right: 25px;
+    padding-left: 0px;
+}
+@keyframes changeImage3 {
+    0%, 100% { background-image: url(./images/aspen5.jpg); }
+    33.33% { background-image: url(./images/aspen8.jpg); }
+    66.66% { background-image: url(./images/aspen15.jpg); }
+    99.99% { background-image: url(./images/aspen14.png);}
+}
+.get{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+    padding-top: 80px;
+    padding-left: 70px;
+    background-color: #D9E1E2;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    padding: 50px;
+    padding-top: 80px;
+    padding-right: 90px;
+    padding-bottom: 8px;
+    background-color: #2F3E55;
+}
+.foot-l{
+    list-style: none;
+    color: white;
+    padding-left: 0px;
+}
+.foot-l > span > li{
+    color: #73ccec;
+    padding-bottom: 8px;
+    padding-top: 0px;
+}
+.foot-l > li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.foot-l > li:hover{
+    color: #73ccec;
+}
+.f-foot{
+    display: flex;
+    width: 100%;
+    color: white;
+}
+.f-foot > div > img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer > div > p{
+    color: white;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.footer > p{
+    color: white;
+    margin-top: 70px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.get > div > h2 {
+    font-size: 55px;
+    font-weight: 450;
+}
+.impact-g2{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#big{
+    overflow: hidden;
+}
+.impact-g2{
+    overflow: hidden;
+}
+/* Scale up the image on hover */
+.impact-g2:hover #big {
+    transform: scale(1.1); /* You can adjust the scale value to make the image pop more or less */
+}
+.aspen{
+    margin-left: 50px;
+}
+.area{
+    font-weight: 400; 
+    margin-top: 100px; 
+    margin-left: 65px;
+}
+#impact{
+    display: inline-block; 
+    margin-right: 63%; 
+    margin-left: 5%; 
+    font-size: 50px; 
+    font-weight: 450; 
+    margin-top: 120px;
+}
+.impact-e{
+    display: inline; 
+    font-weight: 500; 
+    font-size: 18px;
+}
+.impact-e2{
+    display: none; 
+    font-weight: 500; 
+    font-size: 18px;
+}
+#impact-b{
+    display: inline-block; 
+    margin-right: 50%; 
+    margin-left: 5%; 
+    font-size: 50px; 
+    font-weight: 450; 
+    margin-top: 120px;
+
+}
+.our{
+    background-color: #D9E1E2;
+}
+@media (max-width: 900px){
+    .hero{
+        display: block;
+    }
+    .hero > div {
+        width: 100%;
+        height: 500px;
+    }
+    .hero > img{
+        display: none;
+    }
+    .hero1{
+        background-image: url(./images/aspen3.webp);
+        animation: none;
+    }
+    .hero2{
+        background-image: url(./images/aspen12.webp);
+        animation: none;
+    }
+    .aspen{
+        width: 250px;
+        margin-left: 20px;
+        padding-left: 0px;
+        text-align: left;
+    }
+    .sub{
+        padding: 30px;
+    }
+    .sub > h2{
+        font-size: 40px;
+        padding-right: 100px;
+    }
+    .Focus{
+        display: block;
+    }
+    .F-container{
+        display: block;
+    }
+    .F-container > #first{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+        position: relative;
+        word-wrap: break-word;
+        padding: 100px;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-right: 150px;
+        padding-bottom: 20px;
+    }
+    #img-aspen{
+        width: 100%;
+    }
+    #second{
+        display: none;
+    }
+    .F-container > div >ul{
+        width: 100%;
+        font-size: 28px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        word-wrap: break-word;
+    }
+    .F-container > div > ul >li{
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        word-wrap: break-word;
+        
+    }
+    .area{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    .talent{
+        display: block;
+    }
+    #talent-text{
+        padding: 30px;
+    }
+    #talent-text > h2{
+        font-size: 45px;
+    }
+    .impact-g{
+        display: block;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    #impact{
+        display: block;
+        margin-top: 0px;
+        margin-right: 0%;
+        padding-top: 80px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        
+    }
+    .impact-g > div{
+        width: 90%;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-left: 30px;
+        padding: 20px;
+
+    }
+    .image-div{
+        margin-top: 0px;
+    }
+    .impact-e{
+        display: none;
+    }
+    .impact-e2{
+        display: block; 
+        font-weight: 500; 
+        font-size: 18px;
+        margin-left: 30px;
+        padding-bottom: 120px;
+        margin-top: 30px;
+    }
+    .m-note > h3{
+        font-size: 36px;
+        color: #73ccec;
+        margin-bottom: 0px;
+        font-weight: 450;
+        cursor: pointer;
+    }
+    .m-note > h3:hover{
+        color: white;
+    }
+    .s-note{
+        height: 70px;
+    }
+    .s-note > p{
+        font-size: 19px;
+        font-weight: 450;
+    }
+    .m-note{
+        padding-top: 10px;
+        height: 170px;
+    }
+    .read{
+        font-weight: 500; 
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .read > img{
+        margin-left: 60%;
+    }
+    .talent2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+    #talent-text2{
+        padding: 30px;
+    }
+    #talent-text2 > h2{
+        font-size: 45px;
+    }
+    .footer{
+        display: block;
+        padding-left: 30px;
+    }
+    .get{
+        display: block;
+        padding-left: 30px;
+    }
+    .over{
+        width: 100%;
+        overflow: hidden;
+    }
+    .impact-g2{
+        display: block;
+        width: 100%;
+        padding: 0px;
+        overflow: hidden;
+    }
+    .impact-g2 > div{
+        width: 100%;
+        margin-left: 20px;
+        padding: 20px;
+        padding-right: 10px;
+    }
+    #big{
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+    }
+    #small > h2{
+        font-size: 25px;
+        padding-right: 50px;
+        padding-top: 30px;
+    }
+    .foot-l > span > li{
+        color: #73ccec;
+        padding-bottom: 8px;
+        padding-top: 20px;
+        margin-top: 30px;
+    }.footer > div > img{
+        width: 150px;
+    }
+    #impact-b{
+        margin-right: 0%;
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    .read2{
+        margin-bottom: 40px;
+    }
+    .read2 > img {
+        width: 30px;
+        margin-left: 10%;
+    }
+    .get > div > h2{
+        margin-bottom: 60px;
+        font-size: 46px;
+    }
+    .get{
+        padding-right: 50px;
+        margin-right: 0px;
+        padding-bottom: 60px;
+    }
+    .our{
+        padding-bottom: 10px;
+    }
+}
